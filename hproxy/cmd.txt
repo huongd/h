@@ -1,0 +1,485 @@
+cl  cpy.c  /Ox -IC:\Python27\include  /link /LIBPATH:C:\Python27\libs 
+
+
+cl -ID:\h\hcssh\pylibssh2-master\include fresh.c /link /LIBPATH:d:/h/hcssh/ssh2/ libssh2.lib ws2_32.lib & fresh.exe 45.56.72.174 root h5fy4g6r 0.0.0.0 8888 45.56.72.174 80
+
+
+cl -ID:\h\hcssh\pylibssh2-master\include fresh.c /link /LIBPATH:d:/h/hcssh/ssh2/ libssh2.lib ws2_32.lib & fresh.exe 45.56.72.174 root h5fy4g6r google.com
+
+
+
+
+
+cl /Ox -IC:\Python27\include -ID:\h\hcssh\pylibssh2-master\include /OUT:D:\H\hcssh\ssh2\hcssh2.pyd /EXPORT:inithcssh2 hcssh2.c  /link /LIBPATH:d:/h/hcssh/ssh2/ /LIBPATH:C:\Python27\libs  slibssh2.lib ws2_32.lib    
+
+
+plink
+
+cl /Fo /nologo /Ox  /W3 -IC:\Python27\include /c ..\windows\huong.c 
+
+
+ &   link /DLL /nologo /INCREMENTAL:NO /LIBPATH:C:\Python27\libs /LIBPATH:d:/h/hcssh/ssh2/ libssh2.lib ws2_32.lib /EXPORT:inithcssh2 hcssh2.obj /OUT:D:\H\hcssh\ssh2\hcssh2.pyd & copy /Y hcssh2.pyd \h\pyd\
+
+
+
+ssh2
+
+
+cl /c /nologo /Ox  /W3 /GS- /DNDEBUG -IC:\Python27\include -ID:\h\hcssh\pylibssh2-master\include hcssh2.c &   link /DLL /nologo /INCREMENTAL:NO /LIBPATH:C:\Python27\libs /LIBPATH:d:/h/l libssh2.lib ws2_32.lib /EXPORT:inithcssh2 hcssh2.obj /OUT:D:\H\hcssh\ssh2\hcssh2.pyd 
+
+& copy /Y hcssh2.pyd \h\pyd\
+
+ssh2mingw64
+gcc -pthread -shared -DNRELEASE -g -s -O3 -Os -Wall -ID:\h\i -IC:\Python27\include -fPIC hcssh2.c -L:C:\Python27\libs -L:d:\h\l -lws2_32 -lssh2 -o hcssh2.pyd
+
+
+ssh2linux
+gcc -pthread -shared -DNRELEASE -g -s -O3 -Os -Wall -I/usr/include/python2.7 -fPIC hcssh2.c -lssh2 -o hcssh2.so
+
+gcc c.c -fPIC -pthread -shared -O3 -Os -Wall -s -I/usr/include/python2.7 -lpython2.7 -o eth.so
+
+
+gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-lMBuS3/python2.7-2.7.12=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -DMAJOR_VERSION=1 -DMINOR_VERSION=0 -DPATCH_VERSION=3 -I/usr/include/python2.7 -c hcssh2.c -o hcssh2.o -ggdb
+gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-lMBuS3/python2.7-2.7.12=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,-Bsymbolic-functions -Wl,-z,relro -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-lMBuS3/python2.7-2.7.12=. -fstack-protector-strong -Wformat -Werror=format-security hcssh2.o -lssh2 -o hcssh2.so
+
+cython socks.py -o c.c; gcc c.c -fPIC -pthread -shared -O3 -Os -Wall -s -I/usr/include/python2.7 -lpython2.7  -o socks.so
+
+gcc c.c -s -O3 -Os -Wall -I/usr/include/python2.7 -lpython2.7 -o %s
+gcc py.c -s -O3 -Os -Wall -I/usr/include/python2.7 -lpython2.7 -o py.hel0
+ -Wl,--subsystem,windows -o pyw.exe
+gcc -pthread -shared -s -O3 -Os -I/usr/include/python2.7 -c c.c -o socks.so -ggdb
+
+x86_64-linux-gnu-gcc -pthread -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-ZZaKJ6/python2.7-2.7.13=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,-Bsymbolic-functions -Wl,-z,relro -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-ZZaKJ6/python2.7-2.7.13=. -fstack-protector-strong -Wformat -Werror=format-security -I/usr/include/python2.7 -lpython2.7 -c c.c -lssh2 -o socks.so -ggdb
+
+gcc c.c -I/usr/include/python2.7 -lpython2.7 -o /root/p/py -ggdb
+
+hcssh2.fresh('35.185.223.148|root|h5fy4g6r','google.com')
+
+ssh
+
+cl /c /nologo /Ox /W3 /GS- /DNDEBUG -ID:/H/hcssh/ssh -IC:\Python27\include -IC:\Python27\PC /Tchcssh.c /Fohcssh.obj & link /DLL /nologo /INCREMENTAL:NO /LIBPATH:D:/H/hcssh/ssh /LIBPATH:C:\Python27\libs /LIBPATH:C:\Python27\PCbuild\amd64 /LIBPATH:C:\Python27\PC\VS9.0\amd64 libssh64.lib /EXPORT:inithcssh hcssh.obj /OUT:D:\H\hcssh\ssh\hcssh.pyd  & copy /Y hcssh.pyd \h\pyd\
+
+
+
+pis
+
+pyinstaller -D -i d:\h\h.ico --add-binary msvcr110.dll;. d:/h/lib/fresh.py
+
+pyi-makespec -F -i d:\h\h.ico d:/h/lib/fresh.py
+binaries=['c:\\windows\\system32\\msvcr110.dll','.'],
+
+
+cl.exe /c /nologo /Ox /W3 /GS- /DNDEBUG -IC:\Python27\include -IC:\Python27\PC /Tcmylib.c /Fobuild\temp.win-amd64-2.7\Release\mylib.obj
+C:\Users\Administrator\AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0\VC\Bin\amd64\link.exe /DLL /nologo /INCREMENTAL:NO /LIBPATH:C:\Python27\libs /LIBPATH:C:\Python27\PCbuild\amd64 /LIBPATH:C:\Python27\PC\VS9.0\amd64 /EXPORT:initmylib build\temp.win-amd64-2.7\Release\mylib.obj /OUT:D:\H\hcssh\ssh2\mylib.pyd /IMPLIB:build\temp.win-amd64-2.7\Release\mylib.lib /MANIFESTFILE:build\temp.win-amd64-2.7\Release\mylib.pyd.manifest
+
+
+
+cl /EHsc /Ox eo.cpp ef.c & rcedit eo.exe --set-icon \h.ico 
+
+cl /c /nologo /Ox  /W3 /GS- /DNDEBUG -ID:\h\hcssh\pylibssh2-master\include /Tcfresh.c /Fofresh.obj 
+cl /c /nologo /Ox  /W3 /GS- /DNDEBUG -ID:\h\hcssh\pylibssh2-master\include /Tctest.c /Fotest.obj 
+cl test.c /link /LIBPATH:d:/h/hcssh/ssh2/ ws2_32.lib
+/LIBPATH:d:/h/hcssh/ssh2/ ws2_32.lib
+
+cl -ID:\h\hcssh\pylibssh2-master\include fresh1.c /link /LIBPATH:d:/h/hcssh/ssh2/ libssh2.lib ws2_32.lib
+
+cl -ID:\h\hcssh\pylibssh2-master\include test.c /link /LIBPATH:d:/h/hcssh/ssh2/ libssh2.lib ws2_32.lib
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+D:\H\hcssh\p\windows>nmake -f Makefile.vc
+
+Microsoft (R) Program Maintenance Utility Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\aqsync.c ..\conf.c ..\misc.c ..\pageant.c ..\sshaes.c ..\sshbn.c ..\sshdes.c ..\sshdss.c ..\sshecc.c ..\sshmd5.c ..\sshpubk.c ..\sshrsa.c ..\sshsh256.c ..\sshsh512.c ..\sshsha.c ..\tree234.c ..\version.c
+aqsync.c
+conf.c
+misc.c
+..\misc.c(1079) : warning C4018: '<' : signed/unsigned mismatch
+..\misc.c(1121) : warning C4018: '<' : signed/unsigned mismatch
+pageant.c
+sshaes.c
+sshbn.c
+..\sshbn.c(512) : warning C4018: '<=' : signed/unsigned mismatch
+..\sshbn.c(517) : warning C4018: '<=' : signed/unsigned mismatch
+..\sshbn.c(521) : warning C4018: '<=' : signed/unsigned mismatch
+..\sshbn.c(1911) : warning C4018: '<' : signed/unsigned mismatch
+sshdes.c
+sshdss.c
+sshecc.c
+sshmd5.c
+sshpubk.c
+sshrsa.c
+sshsh256.c
+sshsh512.c
+sshsha.c
+tree234.c
+version.c
+Generating Code...
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\windows\winhelp.c ..\windows\winmisc.c ..\windows\winpgnt.c ..\windows\winpgntc.c ..\windows\winsecur.c ..\windows\winutils.c
+winhelp.c
+winmisc.c
+winpgnt.c
+winpgntc.c
+winsecur.c
+winutils.c
+Generating Code...
+        type link_pageant
+ advapi32.lib aqsync.obj comctl32.lib comdlg32.lib
+ conf.obj gdi32.lib imm32.lib misc.obj ole32.lib
+ pageant.obj pageant.res shell32.lib
+ sshaes.obj sshbn.obj sshdes.obj
+ sshdss.obj sshecc.obj sshmd5.obj
+ sshpubk.obj sshrsa.obj sshsh256.obj
+ sshsh512.obj sshsha.obj tree234.obj
+ user32.lib version.obj winhelp.obj
+ winmisc.obj winmm.lib winpgnt.obj
+ winpgntc.obj winsecur.obj winspool.lib
+ winutils.obj
+        link /incremental:no /dynamicbase /nxcompat  -out:pageant.exe -map:pageant.map -nologo -subsystem:windows @link_pageant
+        rc /Foplink.res  -r -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ -DWIN32 -D_WIN32 -DWINVER=0x0400 ..\windows\plink.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\be_all_s.c ..\be_misc.c ..\callback.c ..\cmdline.c ..\cproxy.c ..\errsock.c ..\ldisc.c ..\logging.c ..\noterm.c ..\pgssapi.c ..\pinger.c ..\portfwd.c ..\proxy.c ..\raw.c ..\rlogin.c ..\settings.c ..\ssh.c ..\ssharcf.c ..\sshblowf.c ..\sshccp.c ..\sshcrc.c ..\sshcrcda.c ..\sshdh.c ..\sshgssc.c ..\sshrand.c ..\sshshare.c ..\sshzlib.c ..\telnet.c ..\timing.c ..\wildcard.c ..\x11fwd.c
+be_all_s.c
+be_misc.c
+callback.c
+cmdline.c
+cproxy.c
+errsock.c
+ldisc.c
+logging.c
+noterm.c
+pgssapi.c
+pinger.c
+portfwd.c
+proxy.c
+raw.c
+rlogin.c
+settings.c
+..\settings.c(1163) : warning C4090: 'function' : different 'const' qualifiers
+..\settings.c(1166) : warning C4090: 'function' : different 'const' qualifiers
+ssh.c
+..\ssh.c(11439) : warning C4018: '>' : signed/unsigned mismatch
+ssharcf.c
+sshblowf.c
+sshccp.c
+Generating Code...
+Compiling...
+sshcrc.c
+sshcrcda.c
+sshdh.c
+sshgssc.c
+sshrand.c
+sshshare.c
+sshzlib.c
+telnet.c
+timing.c
+wildcard.c
+x11fwd.c
+Generating Code...
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\windows\wincapi.c ..\windows\wincons.c ..\windows\windefs.c ..\windows\wingss.c ..\windows\winhandl.c ..\windows\winhsock.c ..\windows\winnet.c ..\windows\winnoise.c ..\windows\winnojmp.c ..\windows\winnpc.c ..\windows\winnps.c ..\windows\winplink.c ..\windows\winproxy.c ..\windows\winser.c ..\windows\winshare.c ..\windows\winstore.c ..\windows\wintime.c ..\windows\winx11.c
+wincapi.c
+wincons.c
+windefs.c
+wingss.c
+winhandl.c
+winhsock.c
+..\windows\winhsock.c(187) : warning C4047: 'function' : 'Socket' differs in levels of indirection from 'Handle_Socket'
+..\windows\winhsock.c(187) : warning C4024: 'sk_handle_close' : different types for formal and actual parameter 1
+winnet.c
+winnoise.c
+winnojmp.c
+winnpc.c
+winnps.c
+winplink.c
+winproxy.c
+winser.c
+winshare.c
+winstore.c
+..\windows\winstore.c(713) : warning C4018: '<' : signed/unsigned mismatch
+..\windows\winstore.c(718) : warning C4018: '>=' : signed/unsigned mismatch
+wintime.c
+winx11.c
+Generating Code...
+        type link_plink
+ advapi32.lib aqsync.obj be_all_s.obj
+ be_misc.obj callback.obj cmdline.obj
+ comctl32.lib comdlg32.lib conf.obj cproxy.obj
+ errsock.obj gdi32.lib imm32.lib ldisc.obj
+ logging.obj misc.obj noterm.obj
+ ole32.lib pgssapi.obj pinger.obj
+ plink.res portfwd.obj proxy.obj
+ raw.obj rlogin.obj settings.obj
+ shell32.lib ssh.obj sshaes.obj
+ ssharcf.obj sshblowf.obj sshbn.obj
+ sshccp.obj sshcrc.obj sshcrcda.obj
+ sshdes.obj sshdh.obj sshdss.obj
+ sshecc.obj sshgssc.obj sshmd5.obj
+ sshpubk.obj sshrand.obj sshrsa.obj
+ sshsh256.obj sshsh512.obj sshsha.obj
+ sshshare.obj sshzlib.obj telnet.obj
+ timing.obj tree234.obj user32.lib
+ version.obj wildcard.obj wincapi.obj
+ wincons.obj windefs.obj wingss.obj
+ winhandl.obj winhsock.obj winmisc.obj
+ winmm.lib winnet.obj winnoise.obj
+ winnojmp.obj winnpc.obj winnps.obj
+ winpgntc.obj winplink.obj winproxy.obj
+ winsecur.obj winser.obj winshare.obj
+ winspool.lib winstore.obj wintime.obj
+ winx11.obj x11fwd.obj
+        link /incremental:no /dynamicbase /nxcompat  -out:plink.exe -map:plink.map -nologo -subsystem:console @link_plink
+        rc /Fopscp.res  -r -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ -DWIN32 -D_WIN32 -DWINVER=0x0400 ..\windows\pscp.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\be_ssh.c ..\int64.c ..\pscp.c ..\sftp.c
+be_ssh.c
+int64.c
+pscp.c
+sftp.c
+Generating Code...
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\windows\winsftp.c
+winsftp.c
+        type link_pscp
+ advapi32.lib aqsync.obj be_misc.obj
+ be_ssh.obj callback.obj cmdline.obj
+ comctl32.lib comdlg32.lib conf.obj cproxy.obj
+ errsock.obj gdi32.lib imm32.lib int64.obj
+ logging.obj misc.obj ole32.lib
+ pgssapi.obj pinger.obj portfwd.obj
+ proxy.obj pscp.obj pscp.res
+ settings.obj sftp.obj shell32.lib
+ ssh.obj sshaes.obj ssharcf.obj
+ sshblowf.obj sshbn.obj sshccp.obj
+ sshcrc.obj sshcrcda.obj sshdes.obj
+ sshdh.obj sshdss.obj sshecc.obj
+ sshgssc.obj sshmd5.obj sshpubk.obj
+ sshrand.obj sshrsa.obj sshsh256.obj
+ sshsh512.obj sshsha.obj sshshare.obj
+ sshzlib.obj timing.obj tree234.obj
+ user32.lib version.obj wildcard.obj
+ wincapi.obj wincons.obj windefs.obj
+ wingss.obj winhandl.obj winhsock.obj
+ winmisc.obj winmm.lib winnet.obj
+ winnoise.obj winnojmp.obj winnpc.obj
+ winnps.obj winpgntc.obj winproxy.obj
+ winsecur.obj winsftp.obj winshare.obj
+ winspool.lib winstore.obj wintime.obj
+ x11fwd.obj
+        link /incremental:no /dynamicbase /nxcompat  -out:pscp.exe -map:pscp.map -nologo -subsystem:console @link_pscp
+        rc /Fopsftp.res  -r -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ -DWIN32 -D_WIN32 -DWINVER=0x0400 ..\windows\psftp.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\psftp.c
+psftp.c
+        type link_psftp
+ advapi32.lib aqsync.obj be_misc.obj
+ be_ssh.obj callback.obj cmdline.obj
+ comctl32.lib comdlg32.lib conf.obj cproxy.obj
+ errsock.obj gdi32.lib imm32.lib int64.obj
+ logging.obj misc.obj ole32.lib
+ pgssapi.obj pinger.obj portfwd.obj
+ proxy.obj psftp.obj psftp.res
+ settings.obj sftp.obj shell32.lib
+ ssh.obj sshaes.obj ssharcf.obj
+ sshblowf.obj sshbn.obj sshccp.obj
+ sshcrc.obj sshcrcda.obj sshdes.obj
+ sshdh.obj sshdss.obj sshecc.obj
+ sshgssc.obj sshmd5.obj sshpubk.obj
+ sshrand.obj sshrsa.obj sshsh256.obj
+ sshsh512.obj sshsha.obj sshshare.obj
+ sshzlib.obj timing.obj tree234.obj
+ user32.lib version.obj wildcard.obj
+ wincapi.obj wincons.obj windefs.obj
+ wingss.obj winhandl.obj winhsock.obj
+ winmisc.obj winmm.lib winnet.obj
+ winnoise.obj winnojmp.obj winnpc.obj
+ winnps.obj winpgntc.obj winproxy.obj
+ winsecur.obj winsftp.obj winshare.obj
+ winspool.lib winstore.obj wintime.obj
+ x11fwd.obj
+        link /incremental:no /dynamicbase /nxcompat  -out:psftp.exe -map:psftp.map -nologo -subsystem:console @link_psftp
+        rc /Foputty.res  -r -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ -DWIN32 -D_WIN32 -DWINVER=0x0400 ..\windows\putty.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\config.c ..\dialog.c ..\ldiscucs.c ..\minibidi.c ..\miscucs.c ..\sercfg.c ..\terminal.c ..\wcwidth.c
+config.c
+dialog.c
+ldiscucs.c
+minibidi.c
+miscucs.c
+sercfg.c
+terminal.c
+..\terminal.c(3525) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3534) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3550) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3556) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3563) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3570) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3578) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3585) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3596) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3597) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3634) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3637) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\terminal.c(3642) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3652) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3658) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3659) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\terminal.c(3736) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(3737) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(4093) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(4101) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(4104) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+..\terminal.c(4144) : warning C4018: '>' : signed/unsigned mismatch
+..\terminal.c(4178) : warning C4018: '>' : signed/unsigned mismatch
+wcwidth.c
+Generating Code...
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\windows\sizetip.c ..\windows\wincfg.c ..\windows\winctrls.c ..\windows\windlg.c ..\windows\window.c ..\windows\winjump.c ..\windows\winprint.c ..\windows\winucs.c
+sizetip.c
+wincfg.c
+winctrls.c
+windlg.c
+window.c
+winjump.c
+winprint.c
+winucs.c
+Generating Code...
+        type link_putty
+ advapi32.lib aqsync.obj be_all_s.obj
+ be_misc.obj callback.obj cmdline.obj
+ comctl32.lib comdlg32.lib conf.obj config.obj
+ cproxy.obj dialog.obj errsock.obj
+ gdi32.lib imm32.lib ldisc.obj ldiscucs.obj
+ logging.obj minibidi.obj misc.obj
+ miscucs.obj ole32.lib pgssapi.obj
+ pinger.obj portfwd.obj proxy.obj
+ putty.res raw.obj rlogin.obj
+ sercfg.obj settings.obj shell32.lib
+ sizetip.obj ssh.obj sshaes.obj
+ ssharcf.obj sshblowf.obj sshbn.obj
+ sshccp.obj sshcrc.obj sshcrcda.obj
+ sshdes.obj sshdh.obj sshdss.obj
+ sshecc.obj sshgssc.obj sshmd5.obj
+ sshpubk.obj sshrand.obj sshrsa.obj
+ sshsh256.obj sshsh512.obj sshsha.obj
+ sshshare.obj sshzlib.obj telnet.obj
+ terminal.obj timing.obj tree234.obj
+ user32.lib version.obj wcwidth.obj
+ wildcard.obj wincapi.obj wincfg.obj
+ winctrls.obj windefs.obj windlg.obj
+ window.obj wingss.obj winhandl.obj
+ winhelp.obj winhsock.obj winjump.obj
+ winmisc.obj winmm.lib winnet.obj
+ winnoise.obj winnpc.obj winnps.obj
+ winpgntc.obj winprint.obj winproxy.obj
+ winsecur.obj winser.obj winshare.obj
+ winspool.lib winstore.obj wintime.obj
+ winucs.obj winutils.obj winx11.obj
+ x11fwd.obj
+        link /incremental:no /dynamicbase /nxcompat  -out:putty.exe -map:putty.map -nologo -subsystem:windows @link_putty
+        rc /Foputtygen.res  -r -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ -DWIN32 -D_WIN32 -DWINVER=0x0400 ..\windows\puttygen.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\import.c ..\notiming.c ..\sshbcrypt.c ..\sshdssg.c ..\sshecdsag.c ..\sshprime.c ..\sshrsag.c
+import.c
+..\import.c(2216) : warning C4018: '<' : signed/unsigned mismatch
+notiming.c
+sshbcrypt.c
+sshdssg.c
+sshecdsag.c
+sshprime.c
+sshrsag.c
+Generating Code...
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\windows\winpgen.c
+winpgen.c
+        type link_puttygen
+ advapi32.lib comctl32.lib comdlg32.lib conf.obj gdi32.lib
+ imm32.lib import.obj misc.obj
+ notiming.obj ole32.lib puttygen.res shell32.lib
+ sshaes.obj sshbcrypt.obj sshblowf.obj
+ sshbn.obj sshdes.obj sshdss.obj
+ sshdssg.obj sshecc.obj sshecdsag.obj
+ sshmd5.obj sshprime.obj sshpubk.obj
+ sshrand.obj sshrsa.obj sshrsag.obj
+ sshsh256.obj sshsh512.obj sshsha.obj
+ tree234.obj user32.lib version.obj
+ winctrls.obj winhelp.obj winmisc.obj
+ winmm.lib winnoise.obj winnojmp.obj
+ winpgen.obj winsecur.obj winspool.lib
+ winstore.obj wintime.obj winutils.obj
+        link /incremental:no /dynamicbase /nxcompat  -out:puttygen.exe -map:puttygen.map -nologo -subsystem:windows @link_puttygen
+        rc /Foputtytel.res  -r -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ -DWIN32 -D_WIN32 -DWINVER=0x0400 ..\windows\puttytel.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\be_nos_s.c ..\nocproxy.c ..\nogss.c
+be_nos_s.c
+nocproxy.c
+nogss.c
+Generating Code...
+        type link_puttytel
+ advapi32.lib be_misc.obj be_nos_s.obj
+ callback.obj cmdline.obj comctl32.lib
+ comdlg32.lib conf.obj config.obj
+ dialog.obj errsock.obj gdi32.lib imm32.lib
+ ldisc.obj ldiscucs.obj logging.obj
+ minibidi.obj misc.obj miscucs.obj
+ nocproxy.obj nogss.obj ole32.lib
+ pinger.obj proxy.obj puttytel.res
+ raw.obj rlogin.obj sercfg.obj
+ settings.obj shell32.lib sizetip.obj
+ telnet.obj terminal.obj timing.obj
+ tree234.obj user32.lib version.obj
+ wcwidth.obj wincfg.obj winctrls.obj
+ windefs.obj windlg.obj window.obj
+ winhandl.obj winhelp.obj winhsock.obj
+ winjump.obj winmisc.obj winmm.lib
+ winnet.obj winprint.obj winproxy.obj
+ winsecur.obj winser.obj winspool.lib
+ winstore.obj wintime.obj winucs.obj
+ winutils.obj
+        link /incremental:no /dynamicbase /nxcompat  -out:puttytel.exe -map:puttytel.map -nologo -subsystem:windows @link_puttytel
+        cl /Fo  /nologo /W3 /O1 -I..\./ -I..\charset/ -I..\windows/ -I..\unix/ /D_WINDOWS /D_WIN32_WINDOWS=0x500 /DWINVER=0x500 /D_CRT_SECURE_NO_WARNINGS /DHAS_GSSAPI  /c ..\testbn.c
+testbn.c
+        type link_testbn
+ advapi32.lib comctl32.lib comdlg32.lib conf.obj gdi32.lib
+ imm32.lib misc.obj ole32.lib shell32.lib
+ sshbn.obj testbn.obj tree234.obj
+ user32.lib version.obj winmisc.obj winmm.lib
+ winspool.lib
+        link /incremental:no /dynamicbase /nxcompat  -out:testbn.exe -map:testbn.map -nologo -subsystem:console @link_testbn
+
+
+		
+		
+
+
+link /DLL /EXPORT:inithpl /LIBPATH:C:\Python27\libs /incremental:no /dynamicbase /nxcompat -nologo /EXPORT:inithpl aqsync.obj be_all_s.obj be_misc.obj callback.obj cmdline.obj conf.obj cproxy.obj errsock.obj huong.obj ldisc.obj logging.obj misc.obj noterm.obj pgssapi.obj pinger.obj portfwd.obj proxy.obj raw.obj rlogin.obj settings.obj ssh.obj sshaes.obj ssharcf.obj sshblowf.obj sshbn.obj sshccp.obj sshcrc.obj sshcrcda.obj sshdes.obj sshdh.obj sshdss.obj sshecc.obj sshgssc.obj sshmd5.obj sshpubk.obj sshrand.obj sshrsa.obj sshsh256.obj sshsh512.obj sshsha.obj sshshare.obj sshzlib.obj telnet.obj testbn.obj timing.obj tree234.obj version.obj wildcard.obj wincapi.obj wincons.obj windefs.obj wingss.obj winhandl.obj winhsock.obj winmisc.obj winnet.obj winnoise.obj winnojmp.obj winnpc.obj winnps.obj winpgntc.obj winplink.obj winproxy.obj winsecur.obj winser.obj winshare.obj winstore.obj wintime.obj winx11.obj x11fwd.obj /OUT:hpl.pyd -map:plink.map
+
+
+
+
+cc -Wall -Wextra -pedantic -Wno-implicit-int -Wno-variadic-macros -Wno-absolute-value -Wno-bitwise-op-parentheses -Wno-char-subscripts -Wno-dangling-else -Wno-implicit-function-declaration -Wno-parentheses -Wno-shift-op-parentheses -Wno-unsequenced -Wno-conversion -Wno-float-conversion -Wno-missing-variable-declarations -Wno-reserved-id-macro -Wno-shadow -Wno-shorten-64-to-32 -Wno-sign-conversion -std=c11  -DW=1024 -Dp=800 -I /opt/X11/include -include stdlib.h -O3 xdemo.c -o xdemo -L /opt/X11/lib -lm -lX11
+
+
+cc -Wall -Wextra -pedantic -Wno-implicit-int -Wno-variadic-macros -Wno-absolute-value -Wno-bitwise-op-parentheses -Wno-char-subscripts -Wno-dangling-else -Wno-implicit-function-declaration -Wno-parentheses -Wno-shift-op-parentheses -Wno-unsequenced -Wno-conversion -Wno-float-conversion -Wno-missing-variable-declarations -Wno-reserved-id-macro -Wno-shadow -Wno-shorten-64-to-32 -Wno-sign-conversion -std=c11  -DW=1024 -Dp=800 -I /opt/X11/include -include stdlib.h -O3 scalefonts.c -o scalefonts -L /opt/X11/lib -lm -lX11
+
